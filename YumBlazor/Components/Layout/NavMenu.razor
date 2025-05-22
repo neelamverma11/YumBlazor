@@ -43,13 +43,13 @@
                     </NavLink>
                 </div>
                 <div class="nav-item px-3">
-                    <form action="Account/Logout" method="post">
+                    @* <form action="Account/Login" method="post"> *@
                         <AntiforgeryToken />
-                        <input type="hidden" name="ReturnUrl" value="@currentUrl" />
-                        <button type="submit" class="nav-link">
+                        @* <input type="hidden" name="ReturnUrl" value="@currentUrl" /> *@
+                        <NavLink class="nav-link p-2" href="Account/Login">
                             <span class="bi bi-arrow-bar-left-nav-menu" aria-hidden="true"></span> Logout
-                        </button>
-                    </form>
+                        </NavLink>
+                    @* </form> *@
                 </div>
             </Authorized>
             <NotAuthorized>
